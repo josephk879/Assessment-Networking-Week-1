@@ -10,13 +10,24 @@ CACHE_FILE = "./postcode_cache.json"
 def load_cache() -> dict:
     """Loads the cache from a file and converts it from JSON to a dictionary."""
     # This function is used in Task 3, you can ignore it for now.
-    ...
+    with open(CACHE_FILE, "r") as file:
+        data = json.load(file)
+    return data
 
 
 def save_cache(cache: dict):
     """Saves the cache to a file as JSON"""
     # This function is used in Task 3, you can ignore it for now.
-    ...
+
+
+def export_json(flights: list) -> None:
+    """Exports flights data to a JSON file."""
+    dep_iata = flights[0]["dep_iata"]
+    date_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+
+    filename = f"{dep_iata}_{date_time}.json"
+    with open(filename, "w") as f:
+        json.dump(flights, f, indent=2)
 
 
 def validate_postcode(postcode: str) -> bool:
@@ -30,8 +41,7 @@ def validate_postcode(postcode: str) -> bool:
         raise req.RequestException("Unable to access API.")
 
     if res.status_code == 200:
-
-    return False
+        return res.json()["result"]
 
 
 def get_postcode_for_location(lat: float, long: float) -> str:
