@@ -5,14 +5,15 @@ plugins: requests-mock-1.12.1
 collected 91 items
 
 test_postcode_cache.py FFFFFFFFFFFFF                                     [ 14%]
-test_postcode_cli.py ...............FFFFFF...........                    [ 49%]
+test_postcode_cli.py ................................                    [ 49%]
 test_postcode_functions.py ............................................. [ 98%]
 .                                                                        [100%]
 
-======================== 19 failed, 72 passed in 6.05s =========================
+======================== 13 failed, 78 passed in 6.09s =========================
 ************* Module postcode_cli
 postcode_cli.py:12:0: C0301: Line too long (120/100) (line-too-long)
 postcode_cli.py:8:0: C0116: Missing function or method docstring (missing-function-docstring)
+postcode_cli.py:30:11: C0121: Comparison 'completions == None' should be 'completions is None' (singleton-comparison)
 ************* Module postcode_functions
 postcode_functions.py:13:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
 postcode_functions.py:18:15: W0613: Unused argument 'cache' (unused-argument)
@@ -37,5 +38,5 @@ postcode_functions.py:5:0: C0411: standard import "json" should be placed before
 postcode_functions.py:4:0: W0611: Unused import os (unused-import)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.40/10 (previous run: 6.40/10, +0.00)
+Your code has been rated at 6.27/10 (previous run: 6.27/10, +0.00)
 
