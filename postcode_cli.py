@@ -27,8 +27,8 @@ if __name__ == "__main__":
 
     elif mode == "complete":
         completions = get_postcode_completions(postcode)
-        if len(completions) < 1:
-            print(f"No matches for {postcode.upper().strip()}")
+        if completions == None:
+            print(f"No matches for {postcode.upper().strip()}.")
 
         else:
             for completion in completions[:5]:
