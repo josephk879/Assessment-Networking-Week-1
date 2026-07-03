@@ -74,6 +74,8 @@ def get_postcode_completions(postcode_start: str) -> list[str]:
         raise TypeError("Function expects a string.")
 
     data = load_cache()
+    if postcode_start in data:
+        return data[postcode_start]["completions"]
 
     res = req.get(
         f"https://api.postcodes.io/postcodes/{postcode_start}/autocomplete", timeout=10)
