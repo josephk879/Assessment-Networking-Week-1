@@ -6,10 +6,13 @@ from postcode_functions import validate_postcode, get_postcode_completions
 
 
 def postcode_argparse():
+    """Creates the CLI."""
     parser = ArgumentParser(
         description="Postcode CLI tool.")
     parser.add_argument(
-        "--mode", "-m", help="Checks if a provided postcode is valid.", choices=["validate", "complete"], required=True)
+        "--mode", "-m",
+        help="Checks if a provided postcode is valid.",
+        choices=["validate", "complete"], required=True)
     parser.add_argument(
         "postcode", help="Controls the numbers of results being displayed", default=5)
     args = parser.parse_args()
@@ -27,7 +30,7 @@ if __name__ == "__main__":
 
     elif mode == "complete":
         completions = get_postcode_completions(postcode)
-        if completions == None:
+        if completions is None:
             print(f"No matches for {postcode.upper().strip()}.")
 
         else:
