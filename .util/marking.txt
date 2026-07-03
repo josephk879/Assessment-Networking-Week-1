@@ -4,39 +4,16 @@ rootdir: /home/runner/work/Assessment-Networking-Week-1/Assessment-Networking-We
 plugins: requests-mock-1.12.1
 collected 91 items
 
-test_postcode_cache.py FFFFFFFFFFFFF                                     [ 14%]
+test_postcode_cache.py ....FFFF.....                                     [ 14%]
 test_postcode_cli.py ................................                    [ 49%]
 test_postcode_functions.py ............................................. [ 98%]
 .                                                                        [100%]
 
-======================== 13 failed, 78 passed in 6.09s =========================
-************* Module postcode_cli
-postcode_cli.py:12:0: C0301: Line too long (120/100) (line-too-long)
-postcode_cli.py:8:0: C0116: Missing function or method docstring (missing-function-docstring)
-postcode_cli.py:30:11: C0121: Comparison 'completions == None' should be 'completions is None' (singleton-comparison)
+========================= 4 failed, 87 passed in 6.18s =========================
 ************* Module postcode_functions
-postcode_functions.py:13:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
-postcode_functions.py:18:15: W0613: Unused argument 'cache' (unused-argument)
-postcode_functions.py:26:16: E0602: Undefined variable 'datetime' (undefined-variable)
-postcode_functions.py:29:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
-postcode_functions.py:33:0: C0116: Missing function or method docstring (missing-function-docstring)
-postcode_functions.py:38:10: W3101: Missing timeout argument for method 'req.get' can cause your program to hang indefinitely (missing-timeout)
-postcode_functions.py:33:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
-postcode_functions.py:47:0: C0116: Missing function or method docstring (missing-function-docstring)
-postcode_functions.py:51:10: W3101: Missing timeout argument for method 'req.get' can cause your program to hang indefinitely (missing-timeout)
-postcode_functions.py:55:11: C0121: Comparison 'res_json == None' should be 'res_json is None' (singleton-comparison)
-postcode_functions.py:47:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
-postcode_functions.py:63:0: C0116: Missing function or method docstring (missing-function-docstring)
-postcode_functions.py:66:10: W3101: Missing timeout argument for method 'req.get' can cause your program to hang indefinitely (missing-timeout)
-postcode_functions.py:63:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
-postcode_functions.py:76:0: C0116: Missing function or method docstring (missing-function-docstring)
-postcode_functions.py:85:10: W3101: Missing timeout argument for method 'req.post' can cause your program to hang indefinitely (missing-timeout)
-postcode_functions.py:85:19: W1309: Using an f-string that does not have any interpolated variables (f-string-without-interpolation)
-postcode_functions.py:76:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
-postcode_functions.py:4:0: C0411: standard import "os" should be placed before third party import "requests" (wrong-import-order)
-postcode_functions.py:5:0: C0411: standard import "json" should be placed before third party import "requests" (wrong-import-order)
-postcode_functions.py:4:0: W0611: Unused import os (unused-import)
+postcode_functions.py:15:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+postcode_functions.py:21:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.27/10 (previous run: 6.27/10, +0.00)
+Your code has been rated at 9.76/10 (previous run: 9.76/10, +0.00)
 
