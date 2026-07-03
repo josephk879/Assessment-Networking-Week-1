@@ -4,16 +4,16 @@ rootdir: /home/runner/work/Assessment-Networking-Week-1/Assessment-Networking-We
 plugins: requests-mock-1.12.1
 collected 91 items
 
-test_postcode_cache.py ....FFFF.....                                     [ 14%]
+test_postcode_cache.py .............                                     [ 14%]
 test_postcode_cli.py ................................                    [ 49%]
 test_postcode_functions.py ............................................. [ 98%]
 .                                                                        [100%]
 
-========================= 4 failed, 87 passed in 6.18s =========================
+============================== 91 passed in 5.94s ==============================
 ************* Module postcode_functions
 postcode_functions.py:15:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
 postcode_functions.py:21:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.76/10 (previous run: 9.76/10, +0.00)
+Your code has been rated at 9.77/10 (previous run: 9.77/10, +0.00)
 
